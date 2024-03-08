@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #22033a;
+
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  *::-webkit-scrollbar-track {
+    
+    background: transparent
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+  } */
+
+  .dropdown-menu{
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    border: 20px;
+}
+
+.dropdown-menu:hover .dropdown-content{
+    display: flex;
+}
+
+/* .bg-trailer{
+  background: linear-gradient(to top, #0c0014, #00000000), url(https://musicart.xboxlive.com/7/92ed4200-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080);
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+button:active{
+  scale: 1.05;
+}
