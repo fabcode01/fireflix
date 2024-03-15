@@ -36,9 +36,11 @@ const HomeLogin = ({ name }) => {
 
             <div className="dropdown-content absolute flex flex-col gap-3 items-center right-1 w-56 p-3 user-container bg-black bg-opacity-50 rounded text-lg">
               <i className="fa-regular fa-user text-white border-2 p-1 rounded-full"></i>
-              <button className="text-white hover:text-gray-500">
-                Meu perfil
-              </button>
+              <Link to='/perfil'>
+                <button className="text-white hover:text-gray-500">
+                  Meu perfil
+                </button>
+              </Link>
               <button
                 className="text-white hover:text-gray-500"
                 onClick={logout}
@@ -51,12 +53,7 @@ const HomeLogin = ({ name }) => {
 
         <main className="mt-10 ">
           <section className="flex items-center justify-center">
-            {/* GERAR FILME RANDOM */}
-            {/* <img
-              src={trailer.bgSrc}
-              alt="banner-movie"
-              className="w-11/12 rounded-xl border-2 border-purple-300 shadow-2xl"
-            /> */}
+            
 
             <div
               style={{
@@ -103,7 +100,7 @@ const HomeLogin = ({ name }) => {
         </div>
         <div className="bg-black flex justify-center items-center w-full">
           <h2 className="text-white">
-            Fire<span className="text-red-600">flix</span>, 2024 &copy;
+            <span className="text-red-600">Fire</span>flix, 2024 &copy;
           </h2>
         </div>
         <div className="bg-black flex pb-3 justify-center items-center w-full">

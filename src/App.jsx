@@ -13,6 +13,7 @@ import HomeLogin from "./pages/HomeLogin/HomeLogin";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import { Movie } from "./pages/Movie/Movie";
+import Perfil from "./pages/Perfil/Perfil";
 
 function App() {
   const [user, setUser] = useState(undefined);
@@ -62,6 +63,10 @@ function App() {
 
             <Route
               path='/filmes/:id' element={<Movie/>}/>
+
+             <Route 
+              path='/perfil' element={!user ? <HomeWithoutLogin/> : <Perfil dados={user}/>}
+             /> 
           </Routes>
         </BrowserRouter>
       </AuthProvider>
